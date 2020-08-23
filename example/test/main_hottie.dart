@@ -22,7 +22,7 @@ import 'value_listenable_provider_test.dart' as t1;
 
 Future<void> main() async {
   runApp(
-    TestRunner(main: testAll, child: m.MyApp()),
+    TestRunner(main: testAll, child: m.getRootWidget()),
   );
 }
 
