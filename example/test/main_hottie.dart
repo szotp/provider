@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart';
+import 'package:example/main.dart' as m;
+import 'package:flutter/widgets.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:hottie/hottie.dart';
 
-import 'value_listenable_provider_test.dart' as t1;
 import 'builder_test.dart' as t2;
 import 'change_notifier_provider_test.dart' as t3;
-import 'common.dart' as t4;
 import 'consumer_test.dart' as t5;
 import 'context_test.dart' as t6;
 import 'future_provider_test.dart' as t7;
@@ -17,12 +18,21 @@ import 'reassemble_test.dart' as t14;
 import 'selector_test.dart' as t15;
 import 'stateful_provider_test.dart' as t16;
 import 'stream_provider_test.dart' as t17;
+import 'value_listenable_provider_test.dart' as t1;
 
-void main() {
+Future<void> main() async {
+  runApp(
+    TestRunner(main: testAll, child: m.MyApp()),
+  );
+}
+
+@pragma('vm:entry-point')
+void hottie() => hottieInner();
+
+void testAll() {
   t1.main();
   t2.main();
   t3.main();
-  //t4.main();
   t5.main();
   t6.main();
   t7.main();

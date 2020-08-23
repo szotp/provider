@@ -19,7 +19,7 @@ dev_dependencies:
   hottie:
     git: 
       url: https://github.com/szotp/hottie
-      ref: 331d34958357a123f63a179306abc2919e37205d
+      ref: c886e462fb2fcc037f4a260a76bc4ff567c0957a
 
 dependency_overrides:
   provider:
