@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 import 'value_listenable_provider_test.dart' as t1;
 import 'builder_test.dart' as t2;
 import 'change_notifier_provider_test.dart' as t3;

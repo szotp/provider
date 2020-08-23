@@ -12,11 +12,14 @@ dependencies:
   provider:
 
 dev_dependencies:
+  flt_worker: 0.1.0
   mockito: ^4.0.0
   flutter_test:
     sdk: flutter
   hottie:
-    git: https://github.com/szotp/hottie
+    git: 
+      url: https://github.com/szotp/hottie
+      ref: 331d34958357a123f63a179306abc2919e37205d
 
 dependency_overrides:
   provider:
